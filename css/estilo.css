@@ -1,0 +1,358 @@
+body{ /*Background da página*/
+    background: url(../imagens/capa.png) ,
+                url(../imagens/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+                font-family: "Arial";
+    background-attachment: fixed; /*Faz com que o background fique fixo */
+}
+
+/*Para os elementos abaixo ocuparem 100% da tela*/
+html ,body , #home{  
+    height: 100%;  
+    
+}
+
+/*Customização barra de navegação ========================================*/
+
+.navbar /*Coloca fundo preto no menu */
+{ 
+    padding: 15px 0;
+    background:rgba(0, 0, 0, 0.5)
+}
+/*Menu hamburguer branco*/
+.navbar-light .navbar-toggler 
+{
+    color: rgba(0, 0, 0, .5);
+    border-color: #fff ;
+}
+/*Faz com que a fonte fique branca*/
+.navbar-light .navbar-nav .nav-link
+{
+    color: #fff;
+}
+/*Faz com que a fonte fique azul ao passar o mouse*/
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #1ed760;
+}
+/* Barra branca que aparece no menu */
+.divisor{
+    margin: 12px 15px;
+    width: 1px;
+    background: #fff;
+}
+/*FIM - Customização barra de navegação ======================================*/
+
+/* Primeira sessão ===========================================================*/
+
+.capa{ /* Alinha o conteúdo da div no centro */
+    text-align: center;
+}
+
+.btn-custom{ /*Customização dos dois botão abaixo do título*/
+    color: #fff;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s ,color 0.4s;
+    padding: 10px 20px;
+}
+.btn-purple /*botao roxo*/
+{
+    background: #7c25f8;
+}
+.btn-purple:hover /*mouse em cima botao roxo*/
+{
+    background: #6207e3;
+    color: #fff;
+}
+
+.btn-white /*botão branco*/
+{
+    border: 2px solid #fff;
+}
+.btn-white:hover /*mouse em cima botão branco*/
+{
+    background: #fff;
+    color: #000;
+}
+
+.titulo /*customização do titulo central*/
+{
+    font-weight: 900px;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .titulo{
+        font-size: 3em;
+    }
+
+    .btn-custom{
+        margin-top: 0.5em;
+    }
+
+    .navbar-toggler{
+        margin-right: 0.5em;
+    }
+
+    .navbar-brand{
+        margin-left: 0.5em;
+    }
+    .nav-link{
+        margin-left: 1em;
+    }
+ }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .titulo{
+       font-size: 4em;
+    }
+
+   .btn-custom{
+    margin-top: 0.5em;
+    }
+
+    .navbar-toggler{
+        margin-right: 0.5em;
+    }
+
+    .navbar-brand{
+        margin-left: 0.5em;
+    }
+
+    .nav-link{
+        margin-left: 1em;
+    }
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .titulo{
+        font-size: 4em;
+    }
+ }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .titulo{
+        font-size: 5em;
+    }
+ }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    .titulo{
+        font-size: 6em;
+    }
+ }
+
+/* FIM - Primeira sessão ============================================= */
+
+/*Início segunda sessão */
+#serviços
+{
+    background: #fff;
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.albuns
+{
+    padding: 10px 0;
+}
+
+.titulo2{
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.titulo3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.titulo2 , .titulo3{
+    color: #7c25f8;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .titulo2{
+        font-size: 3em;
+        margin-bottom: 0.5em;
+        
+    }
+}
+/*Fim segunda sessão */
+
+/* Início - Terceira sessão*/
+#recursos h3  {
+    color: #9bf0e1;
+}
+
+#recursos h2   {
+    color: #fff;
+}
+
+.caixa{
+    padding: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.rotação{
+    padding-left: 100px;
+    -ms-transform: rotate(39deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+/* FIM - Terceira sessão*/
+
+/*Sessão rodapé*/
+
+footer{
+    background: #000;
+    padding: 50px 0px 20 0px;
+    /*Faz o rodape ficar sobre a imagem do celular*/
+    position: relative; 
+    font-family: Arial, sans-serif;
+      
+}
+
+footer .navbar-nav a {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+    color: #1ed760;
+    text-decoration: none;
+}
+
+footer h4 {
+    font-family: "Arial";
+    color: #919496;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li{
+    
+    float: right;
+    margin: 0 5px;
+}
+
+.espaçamento{
+    
+    padding:2em;
+}
+
+.espaçamentoNAV{
+    color: #919496;
+    font-size: 0.8em;
+    padding-top: 10em;
+    padding-right: 1em;
+    
+}
+
+i{
+    color: #fff;
+}
+
+i:hover{
+    color:#1ed760;
+}
+
+.md-screen{
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+.visual{
+    border: 1px solid #fff;
+}
+
+@media (max-width: 575.98px) {
+    .md-screen2{
+        
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        margin-left: -40px;
+
+    } 
+
+    
+
+    .espaçamentoNAV{
+        box-sizing: border-box;
+        color: #919496;
+        font-size: 0.8em;
+        padding-top: 0em;
+        padding-right:0;
+        padding-left: 0px;
+    }
+
+    i{
+        font-size: 30px;
+    }
+
+    .espaçamento {
+        padding-left: 0px;
+    }
+
+    
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .md-screen{
+        padding-top: 2em;
+        padding-bottom: 0.5em;
+        padding-left: 0px;
+    }
+
+    .espaçamentoNAV{
+        box-sizing: border-box;
+        color: #919496;
+        font-size: 0.8em;
+        padding-top: 0em;
+        padding-right: 1em;
+        display: inline;
+    }
+
+    i{
+        font-size: 30px;
+    }
+
+    .espaçamento{
+        padding-left: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .md-screen{
+        padding-top: 2em;
+        padding-bottom: 0.5em;
+        padding-left: 0px;
+        
+    }
+    i{
+        font-size: 30px;
+    }
+
+    .espaçamento {
+        padding-left: 0px;
+    }
+}
+
+/*FIM - Sessão rodapé*/
